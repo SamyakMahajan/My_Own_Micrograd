@@ -25,5 +25,6 @@ I didn't even know about the basics of ML, yet from the video I was able to unde
 And also, I learnt a lot about python programming too, mainly how he was able to make simple a+b and a*b operations into a complete tree structure!<br>
 <br>
 This is the Node structure that was used:<br>
+
 ![image](https://github.com/SamyakMahajan/My_Own_Micrograd/assets/118765670/125f36ff-ddc8-4160-8ba1-bb5f8266dfdd)
 
