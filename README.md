@@ -45,16 +45,33 @@ All the steps of how this neural net was implemented and trained(I am writing th
     If we define Loss as the square of the errors of predicted values - actual values, we can use this property to find the most appropriate model.   
   </li>
   <li>
-    
+    so, first we create Neurons from the Value class, which are just Nodes with a number of weights and biases, and an activation function. they take input as a list of values and multiply these values with the corresponding weight. basically it computes wi*xi + b and acts an activation function on this and return an output. 
   </li>
   <li>
-    
+    Then we create Layers. A Layer is just a list of neurons
   </li>
   <li>
-    
+    Then we create a Network which is a list of Layers.
   </li>
   <li>
-    
+    This Network gives some value when we pass the original input x(which is a list). We can call this the predicted value.
   </li>
+  <li>
+    Lets say we have some list of inputs and their corresponding outputs.
+    we can pass these inputs through our network and calculate the total error our network gives.
+  </li>
+  <li>
+    since all of these are made of value nodes and the end value is the total Loss, we now have a complete graph where we can see how the loss was calculated. Since we know this, we can also calculate their gradients. 
+  </li>
+  <li>
+    Now that we know the gradient values, we can simply change the value of each weight and bias and this will decrease the total loss. THIS IS WHAT TRAINING IS!!!!!!
+  </li>
+  <li>
+    Changing all the values one time is called an epoch and this method of training is called stochastic gradient descent.
+  </li>
+  <li>
+    We eventually get a trained model that predicts to a very high accuracy.
+  </li>
+  
 </ol>
 
